@@ -1,0 +1,171 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local ScreenGui = Instance.new("ScreenGui")
+local Scripthubbase = Instance.new("Frame")
+local Tab = Instance.new("Frame")
+local Snlable = Instance.new("ImageLabel")
+local title = Instance.new("TextLabel")
+local Loopfling = Instance.new("TextButton")
+local Killall = Instance.new("TextButton")
+local bringall = Instance.new("TextButton")
+
+--Properties:
+
+ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+Scripthubbase.Name = "Scripthub base"
+Scripthubbase.Parent = ScreenGui
+Scripthubbase.AnchorPoint = Vector2.new(0.5, 0.5)
+Scripthubbase.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Scripthubbase.BorderColor3 = Color3.fromRGB(181, 4, 83)
+Scripthubbase.Position = UDim2.new(0.5, 0, 0.5, 0)
+Scripthubbase.Size = UDim2.new(0, 535, 0, 356)
+
+Tab.Name = "Tab"
+Tab.Parent = Scripthubbase
+Tab.AnchorPoint = Vector2.new(0.5, 0.5)
+Tab.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Tab.BorderColor3 = Color3.fromRGB(181, 4, 83)
+Tab.Position = UDim2.new(0.5, 0, -0.0660112351, 0)
+Tab.Size = UDim2.new(0, 535, 0, 25)
+
+Snlable.Name = "Sn lable"
+Snlable.Parent = Scripthubbase
+Snlable.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Snlable.BackgroundTransparency = 1.000
+Snlable.Position = UDim2.new(0, 0, -0.13202247, 0)
+Snlable.Size = UDim2.new(0, 41, 0, 47)
+Snlable.Image = "rbxassetid://12473356923"
+
+title.Name = "title"
+title.Parent = Scripthubbase
+title.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+title.BackgroundTransparency = 1.000
+title.BorderColor3 = Color3.fromRGB(181, 4, 83)
+title.Position = UDim2.new(0.315887839, 0, -0.101123594, 0)
+title.Size = UDim2.new(0, 197, 0, 25)
+title.Font = Enum.Font.SourceSans
+title.Text = "Syrical Net universal hub (praise allah)"
+title.TextColor3 = Color3.fromRGB(181, 4, 83)
+title.TextSize = 14.000
+
+Loopfling.Name = "Loopfling"
+Loopfling.Parent = Scripthubbase
+Loopfling.AnchorPoint = Vector2.new(0, 0.5)
+Loopfling.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Loopfling.BorderColor3 = Color3.fromRGB(181, 4, 83)
+Loopfling.Position = UDim2.new(0.130841076, 0, 0.32303369, 0)
+Loopfling.Size = UDim2.new(0, 166, 0, 44)
+Loopfling.Font = Enum.Font.SourceSans
+Loopfling.Text = "Loopfling all"
+Loopfling.TextColor3 = Color3.fromRGB(181, 4, 83)
+Loopfling.TextSize = 14.000
+
+Killall.Name = "Kill all"
+Killall.Parent = Scripthubbase
+Killall.AnchorPoint = Vector2.new(0, 0.5)
+Killall.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Killall.BorderColor3 = Color3.fromRGB(181, 4, 83)
+Killall.Position = UDim2.new(0.564485967, 0, 0.32303369, 0)
+Killall.Size = UDim2.new(0, 166, 0, 44)
+Killall.Font = Enum.Font.SourceSans
+Killall.Text = "Kill all"
+Killall.TextColor3 = Color3.fromRGB(181, 4, 83)
+Killall.TextSize = 14.000
+
+bringall.Name = "bring all"
+bringall.Parent = Scripthubbase
+bringall.AnchorPoint = Vector2.new(0, 0.5)
+bringall.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+bringall.BorderColor3 = Color3.fromRGB(181, 4, 83)
+bringall.Position = UDim2.new(0.343925178, 0, 0.679775298, 0)
+bringall.Size = UDim2.new(0, 166, 0, 44)
+bringall.Font = Enum.Font.SourceSans
+bringall.Text = "Bring all"
+bringall.TextColor3 = Color3.fromRGB(181, 4, 83)
+bringall.TextSize = 14.000
+
+-- Scripts:
+
+local function NGZCBU_fake_script() -- Loopfling.LocalScript 
+	local script = Instance.new('LocalScript', Loopfling)
+
+	
+	function handleActivated()
+	    loadstring(game:HttpGet('https://github.com/DigitalityScripts/roblox-scripts/raw/main/loop%20fling%20all'))()
+	end
+	
+	script.Parent.Activated:Connect(handleActivated)
+end
+coroutine.wrap(NGZCBU_fake_script)()
+local function STHOSWI_fake_script() -- Killall.LocalScript 
+	local script = Instance.new('LocalScript', Killall)
+
+	function handleActivated()
+	    loadstring(game:HttpGet('https://raw.githubusercontent.com/DigitalityScripts/roblox-scripts/main/Kill%20All'))()
+	end
+	
+	script.Parent.Activated:Connect(handleActivated)
+end
+coroutine.wrap(STHOSWI_fake_script)()
+local function AVVCZQY_fake_script() -- bringall.LocalScript 
+	local script = Instance.new('LocalScript', bringall)
+
+	
+	function handleActivated()
+	    loadstring(game:HttpGet('https://raw.githubusercontent.com/DigitalityScripts/roblox-scripts/main/Bring%20All'))()
+	end
+	
+	script.Parent.Activated:Connect(handleActivated)
+end
+coroutine.wrap(AVVCZQY_fake_script)()
+local function PUAC_fake_script() -- Scripthubbase.DraggableGUI 
+	local script = Instance.new('LocalScript', Scripthubbase)
+
+	local UserInputService = game:GetService("UserInputService")
+	
+	local gui = script.Parent
+	
+	local dragging
+	local dragInput
+	local dragStart
+	local startPos
+	
+	local function update(input)
+		local delta = input.Position - dragStart
+		gui.Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X, startPos.Y.Scale, startPos.Y.Offset + delta.Y)
+	end
+	
+	gui.InputBegan:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
+			dragging = true
+			dragStart = input.Position
+			startPos = gui.Position
+			
+			input.Changed:Connect(function()
+				if input.UserInputState == Enum.UserInputState.End then
+					dragging = false
+				end
+			end)
+		end
+	end)
+	
+	gui.InputChanged:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+			dragInput = input
+		end
+	end)
+	
+	UserInputService.InputChanged:Connect(function(input)
+		if input == dragInput and dragging then
+			if gui.Visible then
+				update(input)
+			end
+		end
+	end)
+end
+coroutine.wrap(PUAC_fake_script)()
